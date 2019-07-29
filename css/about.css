@@ -54,11 +54,11 @@ table {
 
 html, body {
     height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Darker Grotesque', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
+    font-family:'Roboto Slab', serif;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
@@ -80,17 +80,58 @@ header {
 
 header nav{
     display: flex;
-    width: 70%;
+    width: 100%;
     justify-content: space-between;
+    /* padding: px; */
   }
 
 header nav a{
+    font-weight: bold;
+    font-size: 20px;
     text-decoration: none;
     color: grey;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: 40px;
 }
 
 .Mark-img, .Preston-img, .Ndawi-img, .Olga-img {
 width: 50%;
 padding: 50px;
 border-radius: 60%;
+}
+
+.Mark-text, .Ndawi-text {
+    display: flex;
+    flex-direction: row;
+} 
+
+.Preston-text, .Olga-text {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    align-items: center;
+}
+
+footer nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    /* padding: px; */
+  }
+
+footer nav a{
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: grey;
 }
