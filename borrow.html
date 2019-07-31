@@ -6,10 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rent Tools</title>
     <link href="https://fonts.googleapis.com/css?family=Darker+Grotesque|Roboto+Slab&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/borrow.css">
-</head>
+    <link href="css/index.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+   </head>
 
 <body>
+
 <div class="container">
     <header>
         <h1>Use My Tools</h1>
@@ -17,14 +21,22 @@
                 <a href="">Home</a>
                 <a href="">Login</a>
                 <a href="">Rent Your Tools</a>
-                <a href="about.html">About Us</a>
+                <a href="index.html">About Us</a>
             </nav>
     </header>
 
     <div class="top-content">
             <section class="top-text">
                 <h2>George Clooney</h2>
-                <button class="buttons">Rent Tools</button>
+                <button><a href="#openModal">Rent Tools</a></button>
+            <div id="openModal" class="modalDialog">
+	    <div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2>Renter Contacted</h2>
+		<p>The renter has been notified and you will received a response within 24 hours.</p>
+		<p>Thank you for your business!</p>
+	    </div>
+        </div>
                 <ul>
                     <li>Electric Drill</li>
                     <li>Hacksaw</li>
@@ -36,7 +48,15 @@
             <section class="top-text">
                 <img class="renters-img" src="images/woman1.jpg">
                 <h2>Megan Markle<br></h2>
-                <button class="buttons">Rent Tools</button>
+                <button><a href="#openModal">Rent Tools</a></button>
+                <div id="openModal" class="modalDialog">
+            <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Renter Contacted</h2>
+            <p>The renter has been notified and you will received a response within 24 hours.</p>
+            <p>Thank you for your business!</p>
+            </div>
+            </div>
                 <ul>
                     <li>Circular Saw</li>
                     <li>Coping Saw</li>
@@ -48,7 +68,15 @@
             <div class="bottom-content">
             <section class="bottom-text">
                 <h2>Tom Cruise<br></h2>
-                <button class="buttons">Rent Tools</button>
+                <button><a href="#openModal">Rent Tools</a></button>
+                <div id="openModal" class="modalDialog">
+            <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Renter Contacted</h2>
+            <p>The renter has been notified and you will received a response within 24 hours.</p>
+            <p>Thank you for your business!</p>
+            </div>
+            </div>
                 <ul>
                     <li>20V Power String Trimmer</li>
                     <li>Mower</li>
@@ -60,7 +88,15 @@
             <section class="bottom-text">
                 <img class="renters-img" src="images/woman2.jpg">
                 <h2>Taylor Swift<br></h2>
-                <button class="buttons">Rent Tools</button>
+                <button><a href="#openModal">Rent Tools</a></button>
+                <div id="openModal" class="modalDialog">
+            <div>
+            <a href="#close" title="Close" class="close">X</a>
+            <h2>Renter Contacted</h2>
+            <p>The renter has been notified and you will received a response within 24 hours.</p>
+            <p>Thank you for your business!</p>
+            </div>
+            </div>
                 <ul>
                     <li>Tool Box</li>
                     <li>Wrench</li>
@@ -68,8 +104,10 @@
                 </ul>
             </section>
             </div>
+                  
                 
     <footer>
+        <p class="copyright">&copy; Rent My Tools 2019</p>
     </footer>
 </div>
     
