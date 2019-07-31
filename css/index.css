@@ -152,7 +152,8 @@ table {
   box-sizing: border-box;
 }
 html,
-body {
+body,
+footer {
   height: 100%;
   font-family: 'Darker Grotesque', sans-serif;
 }
@@ -166,12 +167,13 @@ h5 {
   margin-bottom: 15px;
 }
 .container {
-  width: 800px;
-  margin: 50px auto;
+  width: 1000px;
+  margin: auto;
 }
 .staff-img {
   width: 300px;
-  padding: 10px;
+  padding: 5px;
+  border: 1px solid #bbded6;
   border-radius: 40%;
 }
 .renters-img {
@@ -193,7 +195,7 @@ ul {
   font-size: 1.2rem;
 }
 button {
-  background-color: lightsalmon;
+  background-color: #F7BE16;
   border: none;
   color: white;
   padding: 15px 32px;
@@ -277,6 +279,27 @@ button {
     text-align: center;
   }
 }
+@media screen and (max-width: 800px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 10px auto;
+  }
+  header {
+    text-align: center;
+  }
+  .top-content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .bottom-content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
 h1 {
   width: 100%;
   display: flex;
@@ -284,6 +307,8 @@ h1 {
   font-weight: bold;
   font-size: 3rem;
   padding: 30px;
+  color: #216583;
+  background-color: #bbded6;
 }
 nav {
   width: 100%;
@@ -294,14 +319,14 @@ nav {
 a {
   text-decoration: none;
   font-size: 1.2rem;
-  color: slategray;
+  color: #216583;
   font-weight: bold;
 }
 .top-content {
   display: flex;
   justify-content: space-between;
   padding: 30px;
-  border-bottom: double slategray;
+  border-bottom: double #f7be16;
   margin: 20px;
 }
 .bottom-content {
@@ -309,4 +334,10 @@ a {
   justify-content: space-between;
   padding: 30px;
   margin: 20px;
+}
+footer {
+  text-align: center;
+  font-size: 2rem;
+  background-color: #216583;
+  padding: 20px;
 }

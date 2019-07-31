@@ -1,11 +1,12 @@
 .container {
-    width: 800px;
-    margin: 50px auto;
+    width: 1000px;
+    margin: auto;
 }
 
 .staff-img {
     width: 300px;
-    padding: 10px;
+    padding: 5px;
+    border: 1px solid #bbded6;
     border-radius: 40%;
   }
 
@@ -21,6 +22,7 @@
     color: darkslategray;
     font-size: 1.2rem;
   }
+
   p {
     font-size: 1.2rem;
   }
@@ -31,7 +33,7 @@
   }
   
   button {
-    background-color: lightsalmon;
+    background-color: #F7BE16;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -100,6 +102,28 @@
 
 
 @media screen and (max-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 10px auto;
+  }
+  header {
+    text-align: center;
+  }
+  .top-content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .bottom-content {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
   .container {
     display: flex;
     flex-direction: column;
